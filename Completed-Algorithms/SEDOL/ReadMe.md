@@ -1,4 +1,5 @@
 Rosetta Code: SEDOLs
+
 For each number list of 6-digit SEDOLs, calculate and append the checksum digit. That is, given the input string on the left, your function should return the corresponding string on the right:
 
 710889 => 7108899
