@@ -16,3 +16,4 @@ For simplicity, the first or last element could be used.
 Note:
 We are calling this function from behind the scenes; the test array we are using is commented out in the editor. 
 Try logging array to see your sorting algorithm in action!
+
