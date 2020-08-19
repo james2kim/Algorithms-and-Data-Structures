@@ -16,3 +16,4 @@ function exponentialGenerator(n) {
     return Math.pow(generatorNum, 2)
   }
   exponentialGenerator(10)
+
