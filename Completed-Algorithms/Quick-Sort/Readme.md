@@ -1,4 +1,6 @@
 Algorithms: Implement Quick Sort
+
+
 Here we will move on to an intermediate sorting algorithm: quick sort. Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. 
 In this method, a pivot value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the pivot value. 
 We then combine the result of recursively calling the quick sort algorithm on both sub-arrays. This continues until the base case of an empty 
