@@ -24,3 +24,4 @@ function LCM(A) {
   return leastCommonMultiple
 }
 LCM([3, 4, 5, 12, 40])
+
