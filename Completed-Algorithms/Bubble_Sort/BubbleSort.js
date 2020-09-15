@@ -7,9 +7,7 @@ function bubbleSort (array) {
       swapCC = 0;
       for (let i = 0, n = array.length; i < n; i++) {
          if (array[i] > array[i+1]) {
-            const temp = array[i];
-            array[i] = array[i+1];
-            array[i+1] = temp;
+           [array[i], array[i+1]] = [array[i+1], array[i]]
             swapCC++;
         }
     }
@@ -18,4 +16,4 @@ function bubbleSort (array) {
   return array
 }
 
-bubbleSort([6,5,4,3,2,1])
+bubbleSort([6,5,4,3,2,1]);
