@@ -1,4 +1,4 @@
-Rosetta Code: Averages/Mode
+# Rosetta Code - Averages/Mode
 
 
 Write a program to find the mode value of a collection.
