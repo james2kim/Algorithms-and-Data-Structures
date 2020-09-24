@@ -21,3 +21,4 @@ class Stack {
       return (this.collection.length = 0);
     }
   }
+
