@@ -1,7 +1,7 @@
 function mergeLists(lists) {
-let newArray=lists.flat()
+const newArray=lists.flat()
 
-let streamMerge=newArray.sort((a,b)=>{
+const streamMerge=newArray.sort((a,b)=>{
   return a-b
 })
 return streamMerge
