@@ -1,7 +1,11 @@
 function symmetricDifference(A, B) {
   // Filter the first and second array and only return unique values
-  const newFirst = A.filter(value => !B.includes(value) ? value : '')
-  const newSecond = B.filter(value =>!A.includes(value) ? value : '')
+    const filterFunc = (filteringArray, comparisonArray) => {
+     return filteringArray.filter
+      (value =>!comparisonArray.includes (value))
+    }
+    const filteredA = filterFunc(A, B)
+    const filteredB = filterFunc(B, A)
   
   // Combine new filtered arrays into new array and sort it
   const symmetricDifference = [...newFirst, ...newSecond].sort()
