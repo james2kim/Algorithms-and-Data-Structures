@@ -16,21 +16,21 @@ let matchLimit = Math.abs((Math.max(s1,s2)/2))-1
 for (let i = 0;i < firstStringC.length; i++) {
  for (let j = 0;j < secondStringC.length; j++) {
  //first string character is in second string and falls within limit 
- if(firstStringC [i] === secondStringC [j] && Math.abs(j-i) <= matchLimit) {
+   if (firstStringC [i] === secondStringC [j] && Math.abs(j-i) <= matchLimit) {
  // Push characters into matching characters array 
  matchingCOne.push(firstStringC [i])
  secondStringC[j] = undefined
- }
- }
+    }
+  }
 }
 
 // define m equal to matching characters 
 let m = matchingCOne.length
 
 // if there are zero matching characters, return 0
-if (m === 0){
- return 0
-}
+ if (m === 0){
+  return 0
+ }
 
 // Adjust for different first letter
 if (tMatchArray[0] !== matchingCOne[0]) {
@@ -45,8 +45,8 @@ tMatchArray = tMatchArray.filter(function(item) {
 // Go through the second array copy 
  for (let i = 0;i < tMatchArray.length;i++) {
  // If the second array character does not match the character at a given order, increment t
- if(tMatchArray[i]!==matchingCOne[i]){
- t++
+ if(tMatchArray[i]!==matchingCOne[i]) {
+   t++
  }
 }
 
@@ -54,16 +54,15 @@ tMatchArray = tMatchArray.filter(function(item) {
   t = t/2
 
 // Formula for calculating Jaro Distance 
-let jaro = 1/3*((m/s1)+(m/s2)+((m-t)/m))
+let jaro = 1/3 * ((m/s1)+(m/s2)+((m-t)/m))
 
 // For rounding errors of the 16th decimal point, insignificant adjustment to pass testing conditions for freeCodeCamp
-if (string1 === "ABCD" | |string1 === "MARTHA") {
- jaro+=0.0000000000000001
-}
+ if (string1 === "ABCD" | |string1 === "MARTHA") {
+  jaro += 0.0000000000000001
+ }
 // We need to change string value back to floating point number 
-jaro=parseFloat(jaro.toFixed(16))
-return jaro
-
+ jaro = parseFloat(jaro.toFixed(16))
+ return jaro
 }
 
 jaro("MARTHA", "MARHTA")
