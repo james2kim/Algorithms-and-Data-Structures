@@ -1,21 +1,11 @@
 function letterFrequency(txt) {
- let array = []
- let freq = 0
-  for (let i = 0;i < txt.length; i++) {
-     if (!array.includes(txt[i])){
-       array.push(txt[i])
-    }
+  const array = txt.split('')
+  const unique = [...new Set(array)].sort()
+  let letterFrequency = []
+  for (let i = 0; i < unique.length; i++) {
+     const count = array.filter(item => item == unique[i]).length
+     letterFrequency.push([unique[i], count])
   }
-let freqArray=array.map(char=>{
-  return [char,freq]
-})
-for (let i = 0;i < freqArray.length; i++) {
-  for (let j = 0;j < txt.length; j++) {
-    if(txt[j] === freqArray[i][0]) {
-      freqArray[i][1]++
-      }
-    }
- }
-return freqArray
+  return letterFrequency
 }
 letterFrequency("Not all that Mrs. Bennet, however")
