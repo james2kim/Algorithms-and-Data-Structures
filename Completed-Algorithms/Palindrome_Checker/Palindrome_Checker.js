@@ -24,12 +24,6 @@ palindrome("_eye")
 
 
 
-
-
-
-
-
-
 // Initial Solution. Simple but not optimal if the string is extremely long because we have to split the entire string reverse it and join it again. 
 
 function palindrome(str) {
