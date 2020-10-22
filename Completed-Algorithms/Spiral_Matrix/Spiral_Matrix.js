@@ -31,7 +31,7 @@ function spiralArray(n) {
                 y++ 
                 n -= 2
             }
-    // Change values of dx so we can spiral the matrix and change the value we need to change. 
+    // Change values of dx so we can spiral the matrix. This changes the coordinates based off of the position of the matrix
             j = dx; dx = -dy; dy = j; j = 0;
        }
     }
