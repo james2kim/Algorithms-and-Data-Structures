@@ -1,7 +1,5 @@
 // This solution is at least 7x times more performant than initial solution. It loops through the string in both directions and eliminates the possibility of a palindrome if any letters do not match.
 
-
-
 function palindrome(str) {
 const filteredString = str.replace(/[^0-9a-z]/gi, '').toLowerCase()
  let front = 0
