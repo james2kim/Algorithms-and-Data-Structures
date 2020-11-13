@@ -1,4 +1,4 @@
-Basic Algorithm Scripting: Truncate a String
+# Basic Algorithm Scripting: Truncate a String
 
 
 
