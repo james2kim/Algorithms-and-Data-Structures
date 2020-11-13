@@ -1,4 +1,4 @@
-Basic Algorithm Scripting: Boo who
+# Basic Algorithm Scripting: Boo who
 
 
 Check if a value is classified as a boolean primitive. Return true or false.
