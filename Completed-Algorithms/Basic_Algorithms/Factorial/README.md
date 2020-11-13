@@ -1,4 +1,4 @@
-Basic Algorithm Scripting: Factorialize a Number
+# Basic Algorithm Scripting: Factorialize a Number
 
 
 Return the factorial of the provided integer.
