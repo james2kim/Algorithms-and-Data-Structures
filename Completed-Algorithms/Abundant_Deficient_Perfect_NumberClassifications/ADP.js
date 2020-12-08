@@ -10,7 +10,7 @@ let temp = 0;
 
 let ADP = [0,0,0]
 
-for (let i = 1; i <= 20000; i++) {
+for (let i = 1; i <= num; i++) {
     if (sumOfProperDivisors(i) < i) ADP[0]++
     else if (sumOfProperDivisors(i) > i) ADP[2]++
     else ADP[1]++
