@@ -1,17 +1,17 @@
 function binarySearch (sortedArray, value) {
-    let leftPointer = 0
-    let rightPointer = sortedArray.length - 1
+    let start= 0
+    let end = sortedArray.length - 1
     let middle = Math.floor((start + end) / 2)
 
     while(sortedArray[middle] !== value && start <= end) {
         if (value < sortedArray[middle]) {
-            rightPointer = middle -1
+            end = middle -1
         } else {
-            leftPointer = middle + 1
+            start = middle + 1
         }
         middle = Math.floor((start + end) / 2)
     }
-    if (array[middle] === value) {
+    if (sortedArray[middle] === value) {
         return middle
     } 
         return - 1
