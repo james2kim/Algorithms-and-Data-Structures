@@ -6,12 +6,10 @@ const filteredString = str.replace(/[^0-9a-z]/gi, '').toLowerCase()
  let back = filteredString.length -1
  while (front < back) {
    if (filteredString[front] !== filteredString[back]) return false
-  
-   else
-      {
+   else {
         front++
         back--
-      }   
+    }   
  }
  return true
 }
