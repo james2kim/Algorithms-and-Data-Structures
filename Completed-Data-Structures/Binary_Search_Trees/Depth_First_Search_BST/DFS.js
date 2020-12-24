@@ -42,5 +42,6 @@ function BinarySearchTree() {
     traverse(this.root)
     return visited
   }
+  
   // Only change code above this line
 }
