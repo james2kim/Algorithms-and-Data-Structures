@@ -1,4 +1,4 @@
-Rosetta Code: Spiral matrix
+# Rosetta Code: Spiral matrix
 
 
 Produce a spiral array. A spiral array is a square arrangement of the first N2 natural numbers, where the numbers increase sequentially as you go around the edges of the array spiraling inwards. For example, given 5, produce this array:
