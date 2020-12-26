@@ -1,4 +1,4 @@
-Rosetta Code: Ethiopian multiplication
+# Rosetta Code: Ethiopian multiplication
 
 
 Ethiopian multiplication is a method of multiplying integers using only addition, doubling, and halving.
