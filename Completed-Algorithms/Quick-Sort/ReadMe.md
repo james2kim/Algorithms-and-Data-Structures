@@ -1,4 +1,4 @@
-Algorithms: Implement Quick Sort
+# Algorithms: Implement Quick Sort
 
 
 Here we will move on to an intermediate sorting algorithm: quick sort. Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. 
