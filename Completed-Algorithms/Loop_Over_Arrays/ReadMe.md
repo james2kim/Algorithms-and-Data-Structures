@@ -1,4 +1,4 @@
-Rosetta Code: Loop over multiple arrays simultaneously
+# Rosetta Code: Loop over multiple arrays simultaneously
 
 
 Loop over multiple arrays and create a new array whose  ithith  element is the concatenation of  ithith  element of each of the given.
