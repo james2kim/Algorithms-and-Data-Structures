@@ -77,6 +77,6 @@ const addTwoNumbers = function(l1, l2) {
   // In the event that there is a carry value from the last iteration, we must also create a node for this value and add it to the linked list 
     
     if (carry > 0) list.push(carry)
-    
+  
     return list.head
 };
