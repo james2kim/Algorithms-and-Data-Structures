@@ -3,7 +3,7 @@
 A repository for completed coding challenges and data-structures
 
 ### Basic Algorithms
-Basic Algorithms from freeCodeCamp are listed in the Basic Algorithms Folder
+Basic Algorithms are listed in the Basic Algorithms Folder
 
 ### Intermediate - Advanced Level Algorithms 
 All Other Algorithms are contained in their own folders. 
