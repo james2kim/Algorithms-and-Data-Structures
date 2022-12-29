@@ -20,18 +20,12 @@ palindrome("_eye")
 
 
 
-// Initial Solution. Simple but not optimal if the string is extremely long because we have to split the entire string reverse it and join it again. 
+// Second Solution for a more concise code.
 
 function palindrome(str) {
-//First, for ease if comparison, we will lowercase the string and remove all white spaces and special characters 
-const filteredString = str.replace(/[^0-9a-z]/gi, '').toLowerCase()
-// Reverse the string 
-const reversedString = filteredString .split('').reverse().join('')
-// Compare reversed string to the filtered string  
- return reversedString === filteredString ? true : false 
+  const filteredStr = str.replace(/[^0-9a-z]/gi, '').toLowerCase()
+  return filteredStr.split('').reverse().join('') === filteredStr
 }
-
-
 
 palindrome("eye");
 
