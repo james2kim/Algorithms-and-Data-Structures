@@ -5,11 +5,17 @@ class TreeNode:
         self.left = left
         self.right = right
 class Solution:
-    def invertTree(self, root):
-        if root:
-            temp = root.left
-            root.left = root.right
-            root.right = temp
-            self.invertTree(root.left)
-            self.invertTree(root.right)
-        return root
+    def invertTree(_, root):
+        def helper(node):
+            if not node:
+                return None
+            temp = node.left
+            node.left = node.right
+            node.right = temp
+            helper(node.left)
+            helper(node.right)
+            return node
+        return helper(root)
+ 
+
+        
